@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - BlogBuddy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">📝 BlogBuddy</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" class="active">Contact Us</a>
+        </nav>
+
+        <div class="user-controls">
+            <a href="login.html" class="btn" id="loginLink">Login</a>
+            <a href="register.html" class="btn" id="registerLink">Register</a>
+            <div class="profile-menu" id="profileMenu">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile" class="profile-icon"
+                    id="profileIcon">
+                <div class="dropdown" id="profileDropdown">
+                    <a href="my-posts.html">👤 My Posts</a>
+                    <a href="settings.html">⚙️ Settings</a>
+                    <a href="#" id="logoutBtn">🚪 Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Whether you have feedback, questions, or suggestions, feel free to reach out.</p>
+
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <p>Email: support@blogbuddy.com</p>
+                <p>Phone: +91 12345 67890</p>
+                <p>Address: 123 Blogging Street, Pune, Maharashtra, India</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>BlogBuddy © 2025</p>
+    </footer>
+</body>
+
+</html>
