@@ -15,6 +15,7 @@ BlogBuddy is a simple and responsive web platform to create, read, edit, and del
 
 🌐 Responsive Design – Works on both desktop and mobile.
 
+
 **Technologies Used**
 
 HTML – Structure and forms.
