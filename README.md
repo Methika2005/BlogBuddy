@@ -1,7 +1,7 @@
 # BlogBuddy
 BlogBuddy is a simple and responsive web platform to create, read, edit, and delete posts.
 
-Features
+**Features**
 
 📝 Create Posts – Add a title, author, tags, and content.
 
@@ -15,13 +15,15 @@ Features
 
 🌐 Responsive Design – Works on both desktop and mobile.
 
-Technologies Used
+**Technologies Used**
 
 HTML – Structure and forms.
+
 CSS – Responsive layout and styling.
+
 JavaScript – Logic for creating, updating, deleting posts.
 
-Getting Started
+**Getting Started**
 1. Clone the repository
 git clone https://github.com/your-username/blogbuddy.git
 cd blogbuddy
@@ -31,6 +33,7 @@ cd blogbuddy
 Open index.html in your browser (Chrome/Firefox recommended).
 
 3. Use BlogBuddy
+
 
 Fill in the Title, Author, Tags, and Content fields.
 
