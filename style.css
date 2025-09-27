@@ -432,39 +432,114 @@ body {
 .delay-3 { transition-delay: 0.9s; }
 
 
+/* Contact Hero */
+.contact-hero {
+    background: linear-gradient(135deg, #6c63ff, #00c6ff);
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+/* Contact Form */
 #contactForm {
+    flex: 1;
+    min-width: 280px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 1.5rem;
 }
 
 #contactForm input, #contactForm textarea {
     padding: 0.8rem;
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 8px;
     font-family: 'Poppins', sans-serif;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contactForm input:focus, #contactForm textarea:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 10px rgba(108, 99, 255, 0.3);
+    outline: none;
 }
 
 #contactForm button {
-    background-color: #4CAF50;
+    background-color: #6c63ff;
     color: white;
     padding: 0.8rem;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
+    transition: background 0.3s ease;
 }
 
 #contactForm button:hover {
-    background-color: #45a049;
+    background-color: #574fd6;
 }
 
-.contact-info p {
-    margin-top: 1rem;
-    font-size: 0.95rem;
-    color: #333;
+/* Contact Info Cards */
+.contact-cards {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
+
+.contact-cards .card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.contact-cards .card h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Fade-in Animations (same as About page) */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.3s; }
+.delay-2 { transition-delay: 0.6s; }
+
 
 
 /* ----------------- Animations ----------------- */

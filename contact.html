@@ -34,12 +34,15 @@
         </div>
     </header>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <h1>Contact Us</h1>
-            <p>We’d love to hear from you! Whether you have feedback, questions, or suggestions, feel free to reach out.</p>
+    <!-- Hero Section -->
+    <section class="hero contact-hero fade-in">
+        <h1>Get in Touch</h1>
+        <p>Have questions or suggestions? We’d love to hear from you!</p>
+    </section>
 
+    <!-- Contact Form Section -->
+    <section class="contact container fade-in delay-1">
+        <div class="contact-content">
             <form id="contactForm">
                 <input type="text" id="name" placeholder="Your Name" required>
                 <input type="email" id="email" placeholder="Your Email" required>
@@ -47,18 +50,41 @@
                 <button type="submit">Send Message</button>
             </form>
 
-            <div class="contact-info">
-                <p>Email: support@blogbuddy.com</p>
-                <p>Phone: +91 12345 67890</p>
-                <p>Address: 123 Blogging Street, Pune, Maharashtra, India</p>
+            <div class="contact-cards">
+                <div class="card">
+                    <h3>📧 Email</h3>
+                    <p>support@blogbuddy.com</p>
+                </div>
+                <div class="card">
+                    <h3>📞 Phone</h3>
+                    <p>+91 12345 67890</p>
+                </div>
+                <div class="card">
+                    <h3>🏢 Address</h3>
+                    <p>123 Blogging Street, Creativity City, India</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer fade-in delay-2">
         <p>BlogBuddy © 2025</p>
     </footer>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+        const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('appear');
+                observer.unobserve(entry.target);
+            });
+        }, appearOptions);
+        faders.forEach(fader => { appearOnScroll.observe(fader); });
+    </script>
 </body>
 
 </html>
