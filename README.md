@@ -27,8 +27,8 @@ JavaScript – Logic for creating, updating, deleting posts.
 ## **Getting Started**
 1. Clone the repository
 
-  git clone https://github.com/your-username/blogbuddy.git
-  cd blogbuddy
+    git clone https://github.com/your-username/blogbuddy.git
+    cd blogbuddy
 
 2. Open the project
 
