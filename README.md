@@ -26,12 +26,13 @@ JavaScript – Logic for creating, updating, deleting posts.
 
 ## **Getting Started**
 1. Clone the repository
-git clone https://github.com/your-username/blogbuddy.git
-cd blogbuddy
+
+  git clone https://github.com/your-username/blogbuddy.git
+  cd blogbuddy
 
 2. Open the project
 
-Open index.html in your browser (Chrome/Firefox recommended).
+   Open index.html in your browser (Chrome/Firefox recommended).
 
 3. Use BlogBuddy
 
@@ -39,8 +40,8 @@ Open index.html in your browser (Chrome/Firefox recommended).
 
 5. Click Publish to save the post.
 
-Click View to read the full post.
+6. Click View to read the full post.
 
-Click Edit to modify a post.
+7. Click Edit to modify a post.
 
-Click Delete to remove a post.
+8. Click Delete to remove a post.
